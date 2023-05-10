@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindPNG.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindPkgConfig.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindTIFF.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/FindZLIB.cmake
+N:/Development/Dev_Base/openjpeg-2.5.0/cmake/FindLCMS2.cmake
+N:/Development/Dev_Base/openjpeg-2.5.0/thirdparty/CMakeLists.txt

@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A7665597-0A18-3D23-9477-ADF163A19523}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="N:\Development\Dev_Base\openjpeg-2.5.0\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule N:/Development/Dev_Base/openjpeg-2.5.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/openjpeg-2.5.0 -BN:/Development/Dev_Base/openjpeg-2.5.0/msvc --check-stamp-file N:/Development/Dev_Base/openjpeg-2.5.0/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;N:\Development\Dev_Base\openjpeg-2.5.0\LICENSE;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\CTestCustom.cmake.in;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\EnsureFileInclude.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\OpenJPEGCPack.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\OpenJPEGConfig.cmake.in;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\TestLargeFiles.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\msvc\CMakeFiles\3.20.0\CMakeCCompiler.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\msvc\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\msvc\CMakeFiles\3.20.0\CMakeSystem.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\src\lib\openjp2\opj_config.h.cmake.in;N:\Development\Dev_Base\openjpeg-2.5.0\src\lib\openjp2\opj_config_private.h.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">N:\Development\Dev_Base\openjpeg-2.5.0\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule N:/Development/Dev_Base/openjpeg-2.5.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/openjpeg-2.5.0 -BN:/Development/Dev_Base/openjpeg-2.5.0/msvc --check-stamp-file N:/Development/Dev_Base/openjpeg-2.5.0/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;N:\Development\Dev_Base\openjpeg-2.5.0\LICENSE;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\CTestCustom.cmake.in;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\EnsureFileInclude.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\OpenJPEGCPack.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\OpenJPEGConfig.cmake.in;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\TestLargeFiles.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\msvc\CMakeFiles\3.20.0\CMakeCCompiler.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\msvc\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\msvc\CMakeFiles\3.20.0\CMakeSystem.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\src\lib\openjp2\opj_config.h.cmake.in;N:\Development\Dev_Base\openjpeg-2.5.0\src\lib\openjp2\opj_config_private.h.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">N:\Development\Dev_Base\openjpeg-2.5.0\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule N:/Development/Dev_Base/openjpeg-2.5.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/openjpeg-2.5.0 -BN:/Development/Dev_Base/openjpeg-2.5.0/msvc --check-stamp-file N:/Development/Dev_Base/openjpeg-2.5.0/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;N:\Development\Dev_Base\openjpeg-2.5.0\LICENSE;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\CTestCustom.cmake.in;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\EnsureFileInclude.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\OpenJPEGCPack.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\OpenJPEGConfig.cmake.in;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\TestLargeFiles.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\msvc\CMakeFiles\3.20.0\CMakeCCompiler.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\msvc\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\msvc\CMakeFiles\3.20.0\CMakeSystem.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\src\lib\openjp2\opj_config.h.cmake.in;N:\Development\Dev_Base\openjpeg-2.5.0\src\lib\openjp2\opj_config_private.h.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">N:\Development\Dev_Base\openjpeg-2.5.0\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule N:/Development/Dev_Base/openjpeg-2.5.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SN:/Development/Dev_Base/openjpeg-2.5.0 -BN:/Development/Dev_Base/openjpeg-2.5.0/msvc --check-stamp-file N:/Development/Dev_Base/openjpeg-2.5.0/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;N:\Development\Dev_Base\openjpeg-2.5.0\LICENSE;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\CTestCustom.cmake.in;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\EnsureFileInclude.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\OpenJPEGCPack.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\OpenJPEGConfig.cmake.in;N:\Development\Dev_Base\openjpeg-2.5.0\cmake\TestLargeFiles.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\msvc\CMakeFiles\3.20.0\CMakeCCompiler.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\msvc\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\msvc\CMakeFiles\3.20.0\CMakeSystem.cmake;N:\Development\Dev_Base\openjpeg-2.5.0\src\lib\openjp2\opj_config.h.cmake.in;N:\Development\Dev_Base\openjpeg-2.5.0\src\lib\openjp2\opj_config_private.h.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">N:\Development\Dev_Base\openjpeg-2.5.0\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="N:\Development\Dev_Base\openjpeg-2.5.0\msvc\ZERO_CHECK.vcxproj">
+      <Project>{8163DF43-C0DA-3AB1-B857-1034FBFDF192}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openjpeg-2.5.0\msvc\src\lib\openjp2\openjp2.vcxproj">
+      <Project>{855DDCD2-31FA-3A4C-B18D-A3148C448046}</Project>
+      <Name>openjp2</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openjpeg-2.5.0\msvc\src\bin\jp2\opj_compress.vcxproj">
+      <Project>{3FEE0DDA-2994-32E1-9B4E-DF5D44762C69}</Project>
+      <Name>opj_compress</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openjpeg-2.5.0\msvc\src\bin\jp2\opj_decompress.vcxproj">
+      <Project>{EFE3124D-828C-3284-9994-B106AC33185E}</Project>
+      <Name>opj_decompress</Name>
+    </ProjectReference>
+    <ProjectReference Include="N:\Development\Dev_Base\openjpeg-2.5.0\msvc\src\bin\jp2\opj_dump.vcxproj">
+      <Project>{896E0B80-A129-3884-86E0-CB07EAC7802C}</Project>
+      <Name>opj_dump</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

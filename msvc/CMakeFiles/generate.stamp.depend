@@ -1,0 +1,37 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/InstallRequiredSystemLibraries.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.20/Modules/TestBigEndian.cmake
+C:/Program Files/CMake/share/cmake-3.20/Templates/CPackConfig.cmake.in
+N:/Development/Dev_Base/openjpeg-2.5.0/CMakeLists.txt
+N:/Development/Dev_Base/openjpeg-2.5.0/LICENSE
+N:/Development/Dev_Base/openjpeg-2.5.0/cmake/CTestCustom.cmake.in
+N:/Development/Dev_Base/openjpeg-2.5.0/cmake/EnsureFileInclude.cmake
+N:/Development/Dev_Base/openjpeg-2.5.0/cmake/OpenJPEGCPack.cmake
+N:/Development/Dev_Base/openjpeg-2.5.0/cmake/OpenJPEGConfig.cmake.in
+N:/Development/Dev_Base/openjpeg-2.5.0/cmake/TestLargeFiles.cmake
+N:/Development/Dev_Base/openjpeg-2.5.0/msvc/CMakeFiles/3.20.0/CMakeCCompiler.cmake
+N:/Development/Dev_Base/openjpeg-2.5.0/msvc/CMakeFiles/3.20.0/CMakeRCCompiler.cmake
+N:/Development/Dev_Base/openjpeg-2.5.0/msvc/CMakeFiles/3.20.0/CMakeSystem.cmake
+N:/Development/Dev_Base/openjpeg-2.5.0/src/lib/openjp2/opj_config.h.cmake.in
+N:/Development/Dev_Base/openjpeg-2.5.0/src/lib/openjp2/opj_config_private.h.cmake.in

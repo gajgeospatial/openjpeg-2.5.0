@@ -86,8 +86,8 @@
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">openjp2</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">openjp2</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">openjp2</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">openjp2_25</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">openjp2_25</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.dll</TargetExt>
@@ -104,8 +104,8 @@
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">openjp2</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">openjp2</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">openjp2</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">openjp2_25</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">openjp2_25</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.dll</TargetExt>
@@ -256,6 +256,11 @@
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
+    <PostBuildEvent>
+      <Command>if exist $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)   copy /y $(OutDir)$(TargetName).dll $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)
+if exist $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)   copy /y $(OutDir)$(TargetName).pdb $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)
+</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -385,6 +390,11 @@
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
+    <PostBuildEvent>
+      <Command>if exist $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)   copy /y $(OutDir)$(TargetName).dll $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)
+if exist $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\bin   copy /y $(OutDir)$(TargetName).dll $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\bin
+</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>

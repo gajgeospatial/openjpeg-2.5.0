@@ -531,14 +531,6 @@ if exist $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\bi
     <ClCompile Include="..\..\..\..\src\lib\openjp2\sparse_array.c" />
     <ClInclude Include="..\..\..\..\src\lib\openjp2\sparse_array.h" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\ZERO_CHECK.vcxproj">
-      <Project>{8163DF43-C0DA-3AB1-B857-1034FBFDF192}</Project>
-      <Name>ZERO_CHECK</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

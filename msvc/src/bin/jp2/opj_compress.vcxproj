@@ -486,18 +486,6 @@
     <ClCompile Include="..\..\..\..\src\bin\jp2\converttif.c" />
     <ClCompile Include="..\..\..\..\src\bin\jp2\convertpng.c" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\ZERO_CHECK.vcxproj">
-      <Project>{8163DF43-C0DA-3AB1-B857-1034FBFDF192}</Project>
-      <Name>ZERO_CHECK</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
-    <ProjectReference Include="..\..\lib\openjp2\openjp2.vcxproj">
-      <Project>{855DDCD2-31FA-3A4C-B18D-A3148C448046}</Project>
-      <Name>openjp2</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
